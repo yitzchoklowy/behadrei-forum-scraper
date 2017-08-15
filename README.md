@@ -3,6 +3,8 @@ Scraper for Bechadrei Charedim Forums - Based on Scrapy
 
 There are 2 spiders meanwhile in this project: A post spider and an index spider.
 
+To specify which forum to scrape: change start_urls in spider. (currently atzkach forum)
+
 ## Post Spider
 
 name is bechadrei_post_spider
@@ -40,7 +42,7 @@ This will fetch the entire index of the forum, outputting a list of clusters wit
 
 # To run
 
-from project directory: scrapy crawl [spider_name] -o filename.csv # You can also specify .xml or .json to get output in this way. csv is not reccomended for this project as the many commas in the post_content text will mess it up. 
+from project directory: scrapy crawl [spider_name] -o filename.xml (You can also specify .csv or .json to get output in this way. csv is not reccomended for this project as the many commas in the post_content text will mess it up). 
 
 # Requirements
 * Python 3.6.2
